@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Regular */
+@font-face {
+  font-family: 'GS';
+  src: url('./assets/fonts/GeneralSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'GS';
+  src: url('./assets/fonts/GeneralSans-Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'GS';
+  src: url('./assets/fonts/GeneralSans-Italic.otf') format('opentype');
+  font-weight: 400; /* Regular weight for Italic */
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'GS';
+  src: url('./assets/fonts/GeneralSans-Medium.otf') format('opentype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+.font-gs {
+  font-family: 'GS', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.squareh {
+  width: auto;
+  height: 100%; 
+  aspect-ratio: 1 / 1;
+}
+
+.custom-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
